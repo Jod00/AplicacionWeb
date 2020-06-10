@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Meta Tags de encode del sitio -->
+  <meta charset="utf-8" />
+  <!-- Meta Tags de resposive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- CSS del taller -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Ingeniería WEB - Laboratorio 2</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Formulario de perfil de usuario</h1>
+    <fieldset>
+      <legend>Actualizar perfil</legend>
+
+      <form action="">
+        <div class="form-input">
+          <label for="nombre">Nombre:</label>
+          <input id="nombre" type="text" name="nombre" required placeholder="Ingrese su nombre" />
+        </div>
+
+        <div class="form-input">
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" required placeholder="Ingrese su apellido" />
+        </div>
+
+        <div class="form-input">
+          <label for="f_nacimiento">Fecha nacimiento:</label>
+          <input type="date" name="f_nacimiento" required />
+        </div>
+
+        <p>Seleccione su género:</p>
+        <div>
+          <input type="radio" id="masculino" name="genero" value="masculino">
+          <label for="masculino">Masculino</label>
+        
+          <input type="radio" id="femenino" name="genero" value="femenino">
+          <label for="femenino">Femenino</label>
+        </div>
+
+        <div class="form-input">
+          <label for="celular">Celular:</label>
+          <input type="tel" name="celular" maxlength="9" placeholder="Ingrese su número de celular" />
+        </div>
+
+        <div class="form-input">
+          <label for="email">Email:</label>
+          <input type="email" name="email" required placeholder="Ingrese su correo electrónico" />
+        </div>
+
+        <div class="form-input">
+          <label for="password">Contraseña:</label>
+          <input type="password" name="password" minlength="6" maxlength="12" placeholder="Ingrese una contraseña con 6-12 caracteres"/>
+        </div>
+
+        <div class="form-input">
+          <label for="carrera">Carrera:</label>
+          <select name="carrera" required>
+            <option value="">- Seleccione su carrera -</option>
+            <option value="ingsoftware">Ingeniería de Software</option>
+            <option value="computacion">Ingeniería de Sistemas y Computación</option>
+            <option value="informacion">Ingeniería de Sistemas de Información</option>
+            <option value="redes">Licenciatura en Redes Informáticas</option>
+            <option value="software">Licenciatura en Desarrollo de Software</option>
+          </select>
+        </div>
+
+        <div class="form-input">
+          <label for="">Descripción personal:</label>
+          <textarea name="bio" required placeholder="Escriba una breve descripción personal (Máximo 500 caracteres)" maxlength="500"></textarea>
+        </div>
+
+        <div class="form-input submit">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </fieldset>
+  </div>
+
+</body>
+
+</html>

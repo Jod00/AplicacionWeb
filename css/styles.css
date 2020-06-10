@@ -1,0 +1,32 @@
+.container{
+    width: 500px;
+    margin: 0px auto;
+}
+.form-input{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form-input label{
+    display: block;
+}
+.form-input input{
+    width: 100%;
+    line-height: 22px;
+}
+
+.form-input textarea{
+    width: 100%;
+    min-height: 150px;
+}
+.form-input input[type="text"], .form-input input[type="tel"], .form-input input[type="date"], .form-input input[type="email"], .form-input input[type="password"], .form-input select{
+    width: 300px;
+}
+.form-input input[type="color"]{
+    width: 30px;
+}
+.form-input input[type="submit"]{
+    width: 100px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
